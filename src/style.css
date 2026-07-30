@@ -189,27 +189,27 @@ body {
 }
 
 .javascript-logo {
-	background: url("/../src/resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
+	background: url("resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
 	height: 50px;
 	width: 50px;
 	border-radius: 5px;
 }
 
 .html-logo {
-	background: url("src/resources/html_badge.svg") no-repeat;
+	background: url("resources/html_badge.svg") no-repeat;
 	height: 50px;
 	width: 50px;
 }
 
 .css-logo {
-	background: url("/src/resources/Official_CSS_Logo.svg") no-repeat;
+	background: url("resources/Official_CSS_Logo.svg") no-repeat;
 	background-size: contain;
 	height: 50px;
 	width: 50px;
 }
 
 .typescript-logo {
-	background: url("/src/resources/Typescript_logo_2020.svg") no-repeat;
+	background: url("resources/Typescript_logo_2020.svg") no-repeat;
 	background-size: contain;
 	height: 50px;
 	width: 50px;
@@ -833,7 +833,7 @@ body {
 }
 
 .flag {
-	background: url(/src/resources/triangular-flag.png) no-repeat 3px 4px;
+	background: url(resources/triangular-flag.png) no-repeat 3px 4px;
 	background-size: 75%;
 }
 
@@ -851,7 +851,7 @@ body {
 
 #flagIcon {
 	width: 40px;
-	background: url(/src/resources/triangular-flag.png) no-repeat 10px 5px;
+	background: url(resources/triangular-flag.png) no-repeat 10px 5px;
 	background-size: 50%;
 }
 
@@ -861,7 +861,7 @@ body {
 }
 
 .clickedBomb {
-	background: url(/src/resources/collision.png) no-repeat 3px 4px;
+	background: url(resources/collision.png) no-repeat 3px 4px;
 	background-size: 75%;
 }
 

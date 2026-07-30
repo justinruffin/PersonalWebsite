@@ -59,7 +59,7 @@ function applyTheme() {
 				matchingLeftDark.classList.remove("hidden");
 			}
 
-			githubLogo.style.backgroundImage = `url("/src/resources/GitHub_Invertocat_White.svg")`;
+			githubLogo.style.backgroundImage = `url("resources/GitHub_Invertocat_White.svg")`;
 		} else {
 			// Home Page
 			if (window.location.href.includes("index.html")) {
@@ -85,7 +85,7 @@ function applyTheme() {
 				matchingLeftDark.classList.add("hidden");
 			}
 
-			githubLogo.style.backgroundImage = `url("/src/resources/GitHub_Invertocat_Black.svg")`;
+			githubLogo.style.backgroundImage = `url("resources/GitHub_Invertocat_Black.svg")`;
 		}
 	}
 }
@@ -121,7 +121,7 @@ function switchTheme() {
 			matchingLeftDark.classList.add("hidden");
 		}
 
-		githubLogo.style.backgroundImage = `url("/src/resources/GitHub_Invertocat_Black.svg")`;
+		githubLogo.style.backgroundImage = `url("resources/GitHub_Invertocat_Black.svg")`;
 
 		themeToggle.innerHTML = '<i class="fa-solid fa-moon fa-lg"></i>';
 	} else {
