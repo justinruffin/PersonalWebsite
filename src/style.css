@@ -176,7 +176,7 @@ body {
 	font-weight: bold;
 }
 
-.nav-text-exp{
+.nav-text-exp {
 	display: block;
 	width: 100%;
 	height: 20px;
@@ -189,7 +189,7 @@ body {
 }
 
 .javascript-logo {
-	background: url("src/resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
+	background: url("/../src/resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
 	height: 50px;
 	width: 50px;
 	border-radius: 5px;
@@ -215,7 +215,7 @@ body {
 	width: 50px;
 }
 
-.github-logo{
+.github-logo {
 	background: url() no-repeat;
 	background-size: contain;
 	height: 50px;
@@ -496,7 +496,9 @@ body {
 	margin-bottom: 15px;
 }
 
-.job-circle, .degree-circle, .continued-circle {
+.job-circle,
+.degree-circle,
+.continued-circle {
 	height: 8px;
 	width: 8px;
 	border-radius: 15px;
@@ -504,11 +506,15 @@ body {
 	margin-top: 6px;
 }
 
-.job-title-line, .degree-title-line, .continued-title-line{
+.job-title-line,
+.degree-title-line,
+.continued-title-line {
 	display: flex;
 }
 
-.job-title-date, .degree-title-date, .continued-title-date{
+.job-title-date,
+.degree-title-date,
+.continued-title-date {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -542,15 +548,17 @@ body {
 	margin-top: 35px;
 }
 
-.degree, .continued-education {
+.degree,
+.continued-education {
 	margin: 30px 65px;
 }
 
-.degree-type, .continued-education-author {
+.degree-type,
+.continued-education-author {
 	font-weight: 400;
 }
 
-.continued-education-experience{
+.continued-education-experience {
 	margin-top: 35px;
 }
 
@@ -582,7 +590,7 @@ body {
 	display: flex;
 }
 
-.interests-text{
+.interests-text {
 	width: 80%;
 }
 
