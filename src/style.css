@@ -189,14 +189,14 @@ body {
 }
 
 .javascript-logo {
-	background: url("/src/resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
+	background: url("src/resources/Unofficial_JavaScript_logo_2.svg") no-repeat;
 	height: 50px;
 	width: 50px;
 	border-radius: 5px;
 }
 
 .html-logo {
-	background: url("/src/resources/html_badge.svg") no-repeat;
+	background: url("src/resources/html_badge.svg") no-repeat;
 	height: 50px;
 	width: 50px;
 }
