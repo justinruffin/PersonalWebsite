@@ -1,0 +1,128 @@
+:root {
+  --bg-body: rgb(245, 247, 255);
+  --primary-color: rgb(42, 51, 65);
+  --primary-hover-color: rgb(158, 161, 166);
+  --scrollbar-color: rgba(131, 135, 193, 0.4);
+  --card-bg-color: rgba(230, 231, 247, 0.1);
+  --pop-bg-color: rgb(245, 247, 255, 0.9);
+  --star-color: #ddcc14;
+  --border-color: rgba(131, 135, 193, 0.4);
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --accent-color: rgb(194, 33, 105);
+}
+
+.darkmode {
+  --bg-body: rgb(6, 5, 40);
+  --primary-color: rgb(248, 248, 248);
+  --primary-hover-color: rgb(159, 159, 159);
+  --scrollbar-color: rgba(44, 49, 88, 0.7);
+  --card-bg-color: rgb(24, 26, 50);
+  --star-color: #a1d31a;
+  --border-color: rgba(189, 192, 234, 0.4);
+  --shadow-color: rgba(208, 195, 226, 0.13);
+  --accent-color: rgb(185, 129, 250);
+}
+
+.game-container {	
+	font-size: 25px;
+	width: auto;
+}
+
+.grid {
+	height: 400px;
+	width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #dcd6bc;
+	border: 10px solid #dcd6bc;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: content-box;
+}
+
+.grid div {
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	box-sizing: border-box;
+}
+
+.valid,
+.bomb {
+	border: 5px solid;
+	border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+}
+
+.flag {
+    background: url(/src/resources/triangular-flag.png) no-repeat 3px 4px;
+    background-size: 75%;
+}
+
+.flags-left{
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#result {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#flagIcon {
+	width: 40px;
+    background: url(/src/resources/triangular-flag.png) no-repeat 10px 5px;
+    background-size: 50%;
+}
+
+#flags-left {
+	width: 40px;
+	text-align: center;
+}
+
+.clickedBomb {
+    background: url(/src/resources/collision.png) no-repeat 3px 4px;
+    background-size: 75%;
+}
+
+.bomb {
+    background-size: 75%;
+    background-position: 3px 4px;
+    background-repeat: no-repeat;
+}
+
+
+.checked {
+	border: 2px solid #9c998d;
+}
+
+.highlighted {
+	background-color: #ebe8db;
+	border: none;
+	transform: (1);
+	text-transform: (1);
+}
+
+.one {
+	color: red;
+}
+
+.two {
+	color: blue;
+}
+
+.three {
+	color: green;
+}
+
+.four {
+	color: purple;
+}
+
+.five,
+.six,
+.seven,
+.eight {
+	color: black;
+}

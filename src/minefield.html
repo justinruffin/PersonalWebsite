@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Justin Ruffin - Minefield</title>
+		<meta name="author" content="Justin Ruffin" />
+		<link rel="stylesheet" href="resources/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="app-minefield.js" defer></script>
+	</head>
+	<body>
+		<nav class="nav-menu">
+			<div>
+				<div class="logo">
+					<div class="initials"><h5>JR</h5></div>
+					<p>Justin Ruffin</p>
+				</div>
+				<ul>
+					<li class="nav-item">
+						<a href="index.html">
+							<span class="nav-icon"><i class="fa-regular fa-house fa-lg"></i></span>
+							<span class="nav-text">Home</span>
+						</a>
+					</li>
+
+					<li class="nav-item active">
+						<a href="#">
+							<span class="nav-icon"><i class="fa-solid fa-code fa-lg"></i></span>
+							<span class="nav-text">Projects</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="experience.html">
+							<span class="nav-icon"><i class="fa-regular fa-address-card fa-lg"></i></span>
+							<span class="nav-text">Experience</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="about.html">
+							<span class="nav-icon"><i class="fa-regular fa-circle-user fa-lg"></i></span>
+							<span class="nav-text">About Me</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="contact.html">
+							<span class="nav-icon"><i class="fa-regular fa-paper-plane fa-lg"></i></span>
+							<span class="nav-text">Contact</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="content">
+			<div class="left-content">
+				<div class="minefield-header">
+					<h1>Minefield</h1>
+				</div>
+				<div class="minefield-difficulty">
+					<button class="difficulty-btn" data-level="easy">Easy</button>
+					<button class="difficulty-btn active-difficulty" data-level="medium">Medium</button>
+					<button class="difficulty-btn" data-level="hard">Hard</button>
+				</div>
+				<div class="game-main">
+					<div class="game-container">
+						<div class="flags-left"><span id="flagIcon"></span>: <span id="flags-left"></span></div>
+						<div class="grid"></div>
+					</div>
+					<div class="minefield-theme">
+						<h4>Game Theme</h4>
+						<div class="theme-btns">
+							<button class="theme-btn" data-minefield-theme="default">Default</button>
+							<button class="theme-btn" data-minefield-theme="classic">Classic</button>
+						</div>
+					</div>
+				</div>
+				<div class="game-instructions">
+					<h4>How To Play</h4>
+					<p>Goal: Clear the field by placing a flag over each of the mines</p>
+					<div class="minefield-clicks">
+						<div class="minefield-clicks-left">
+							<h4>Left Click</h4>
+							<img class="minefield-left-light minefield-click-img" src="resources/left-click-light.png" />
+							<img class="minefield-left-dark minefield-click-img" src="resources/left-click-dark.png" />
+							<p>Uncovers Square</p>
+						</div>
+						<div class="minefield-clicks-right">
+							<h4>Right Click</h4>
+							<img class="minefield-right-light minefield-click-img" src="resources/right-click-light.png" />
+							<img class="minefield-right-dark minefield-click-img" src="resources/right-click-dark.png" />
+							<p>Places Flag</p>
+						</div>
+					</div>
+					<p>
+						Start a new game by pressing any random square to reveal what is underneath. It is not gaurenteed that the first click will not be a bomb so your first press may result in a
+						loss.
+					</p>
+					<p>
+						When clearing non-mine squares a number may appear [<span class="one">1</span>, <span class="two">2</span>, <span class="three">3</span>, . . . <span class="eight">8</span>].
+						That number represents how many mines are in adjacent squares, if a revealed square has a <span class="three">3</span>, that indicates there are 3 mines in the surrounding
+						squares.
+					</p>
+					<p>If you are certain a square has a mine underneath, right click places a flag and makes it unclickable. Right click again to remove a flag if needed.</p>
+					<p>
+						When a number has an equal number of flags surrounding it, you may middle click to reveal all remaining squares adjacent to that number. This can help speed up game play but be
+						warned, if the flags are not in the right place, it will result in a loss.
+					</p>
+					<p>
+						To start a new game, simply select the difficulty you would like to play at the top of the screen. The difficulties increase by 10 mines each time starting with easy at 10 and
+						hard at 30.
+					</p>
+					<p>Once all non mine squares have been clicked you win!</p>
+					<h4 class="facts">Interesting Facts</h4>
+					<ul>
+						<li>
+							<i>Minesweeper</i> was created in 1990 by Microsoft and introduced in Windows 3.11, with speculation that the game design was largely inspired by <i>Mined-Out</i>, a game
+							released in 1983. The two games share grid style and a simlar display for number of mines in adjacent squares. While never fully confirmed by Microsoft,
+							<i>Minesweeper</i>'s fame grew exponentially in comparison due to it coming standard on all Windows machines at the time depsite having less features.
+						</li>
+						<li>
+							Over the years there have been several varieties of <i>Minesweeper</i> created. One of them being available in the non-Japanese versions of
+							<i>Pokemon HeartGold and SoulSilver</i> known as "Voltorb Flip". It features a 5 x 5 grid where players flip cards to reveal hidden numbers where the Pokemon Voltorb acts
+							as the mines.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right-content">
+				<div class="webpage-theme">
+					<span class="theme-toggle" onclick="switchTheme()"><i class="fa-solid fa-sun fa-lg"></i></span>
+				</div>
+				<div class="languages">
+					<h1>Built Using</h1>
+
+					<div class="languages-container">
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="html-logo"></div>
+								<h1>HTML</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="css-logo"></div>
+								<h1>CSS</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="javascript-logo"></div>
+								<h1>JavaScript</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

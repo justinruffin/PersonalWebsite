@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Justin Ruffin - Matching Game</title>
+		<meta name="author" content="Justin Ruffin" />
+		<link rel="stylesheet" href="resources/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="app-matching.js" defer></script>
+	</head>
+	<body>
+		<nav class="nav-menu">
+			<div>
+				<div class="logo">
+					<div class="initials"><h5>JR</h5></div>
+					<p>Justin Ruffin</p>
+				</div>
+				<ul>
+					<li class="nav-item">
+						<a href="index.html">
+							<span class="nav-icon"><i class="fa-regular fa-house fa-lg"></i></span>
+							<span class="nav-text">Home</span>
+						</a>
+					</li>
+
+					<li class="nav-item active">
+						<a href="#">
+							<span class="nav-icon"><i class="fa-solid fa-code fa-lg"></i></span>
+							<span class="nav-text">Projects</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="experience.html">
+							<span class="nav-icon"><i class="fa-regular fa-address-card fa-lg"></i></span>
+							<span class="nav-text">Experience</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="about.html">
+							<span class="nav-icon"><i class="fa-regular fa-circle-user fa-lg"></i></span>
+							<span class="nav-text">About Me</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="contact.html">
+							<span class="nav-icon"><i class="fa-regular fa-paper-plane fa-lg"></i></span>
+							<span class="nav-text">Contact</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="content">
+			<div class="left-content">
+				<div class="matching-header">
+					<h1>Matching Game</h1>
+				</div>
+				<div class="matching-difficulty">
+					<button class="difficulty-btn" data-level="easy">Easy</button>
+					<button class="difficulty-btn active-difficulty" data-level="medium">Medium</button>
+					<button class="difficulty-btn" data-level="hard">Hard</button>
+				</div>
+				<div class="game-main">
+					<div class="game-container">
+						<div class="matches-left">Matches Left : <span id="matches-left"></span></div>
+						<div class="matching-game-area">
+							<div class="matching-game-board"></div>
+						</div>
+					</div>
+					<div class="matching-theme">
+						<h4>Game Theme</h4>
+						<p>Coming Soon</p>
+					</div>
+				</div>
+				<div class="game-instructions">
+					<h4>How To Play</h4>
+					<p>Goal: Find all matching pairs on the board</p>
+					<div class="matching-clicks">
+						<div class="matching-clicks-left">
+							<h4>Left Click</h4>
+							<img class="matching-left-light matching-click-img" src="resources/left-click-light.png" />
+							<img class="matching-left-dark matching-click-img" src="resources/left-click-dark.png" />
+							<p>Flips Card</p>
+						</div>
+					</div>
+					<p>
+						Left Click to reveal cards, when two cards are revealed they will be checked to confirm if they are a match. If the two cards do not match they will stay revealed for a short
+						time and then get flipped back over. Keep flippings cards until all matches are revealed in order to win.
+					</p>
+					<p>To start a new game, simply select the difficulty you would like to play at the top of the screen.</p>
+					<h4 class="facts">Interesting Facts</h4>
+					<ul>
+						<li>
+							Simple matching games that we know of today have a big origin point of London in 1899 where the <i>Pelman Institute</i> was founded. Using cards with images on the back,
+							you would flip two over at a time until all matches were found. The <i>Pelmanism</i> system of brain training was advertised to strengthen and develop one's mind similar to
+							how physical training can strengthen your body.
+						</li>
+						<li>
+							One of the oldest known matching games is a Japanese game from the 13th century named <i>Kai-awase</i> or "shell-matching". This game involved elaborately painted shells
+							that were flipped and mixed up where two players would take turns trying to find matching pairs. Gold and Silver were eventually added to the shells making them become more
+							of a decorative item and in turn becoming a popular blessing in upper-class weddings.
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right-content">
+				<div class="webpage-theme">
+					<span class="theme-toggle" onclick="switchTheme()"><i class="fa-solid fa-sun fa-lg"></i></span>
+				</div>
+				<div class="languages">
+					<h1>Built Using</h1>
+
+					<div class="languages-container">
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="html-logo"></div>
+								<h1>HTML</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="css-logo"></div>
+								<h1>CSS</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="javascript-logo"></div>
+								<h1>JavaScript</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

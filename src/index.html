@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta charset="UTF-8" />
+		<title>Justin Ruffin - Home</title>
+		<meta name="author" content="Justin Ruffin" />
+		<link rel="icon" href="resources/favicon-light.svg" />
+		<link rel="stylesheet" href="resources/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<nav class="nav-menu">
+			<div>
+				<div class="logo">
+					<div class="initials"><h5>JR</h5></div>
+					<p>Justin Ruffin</p>
+				</div>
+				<ul>
+					<li class="nav-item active">
+						<a href="#">
+							<span class="nav-icon"><i class="fa-regular fa-house fa-lg"></i></span>
+							<span class="nav-text">Home</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#">
+							<span class="nav-icon"><i class="fa-solid fa-code fa-lg"></i></span>
+							<span class="nav-text">Projects</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="experience.html">
+							<span class="nav-icon"><i class="fa-regular fa-address-card fa-lg"></i></span>
+							<span class="nav-text">Experience</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="about.html">
+							<span class="nav-icon"><i class="fa-regular fa-circle-user fa-lg"></i></span>
+							<span class="nav-text">About Me</span>
+						</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="contact.html">
+							<span class="nav-icon"><i class="fa-regular fa-paper-plane fa-lg"></i></span>
+							<span class="nav-text">Contact</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section class="content">
+			<div class="left-content">
+				<div class="header">
+					<div>
+						<h1>Welcome! This is a place holder for a future header</h1>
+					</div>
+				</div>
+
+				<div class="projects">
+					<h1>Projects</h1>
+					<div class="project-container">
+						<div class="card project-card">
+							<div class="project-image">
+								<img class="minefield-img" src="resources/minefield-lightTheme.png" alt="" />
+								<img class="minefield-dark-img" src="resources/minefield-darkTheme.png" alt="" />
+							</div>
+							<div class="project-content">
+								<h2>Minefield</h2>
+								<p>Flag all bombs to win</p>
+							</div>
+							<div class="project-footer">
+								<p class="game">Game</p>
+								<div class="btn-group">
+									<button onclick="window.location.href = 'minefield.html'">Play Now</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="card project-card">
+							<div class="project-image">
+								<img class="matching-img" src="resources/matching-lightTheme.png" alt="" />
+								<img class="matching-dark-img" src="resources/matching-darkTheme.png" alt="" />
+							</div>
+							<div class="project-content">
+								<h2>Matching Game</h2>
+								<p>Find all pairs to win</p>
+							</div>
+							<div class="project-footer">
+								<p class="game">Game</p>
+								<div class="btn-group">
+									<button onclick="window.location.href = 'matching.html'">Play Now</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="card project-card">
+							<div class="project-image">
+								<img class="nfl-img" src="resources/nfl-lightTheme.png" alt="" />
+								<img class="nfl-dark-img" src="resources/nfl-darkTheme.png" alt="" />
+							</div>
+							<div class="project-content">
+								<h2>NFL Tracker</h2>
+								<p>Keep track of your favorite NFL Team</p>
+							</div>
+							<div class="project-footer">
+								<p class="sports">Sports</p>
+								<div class="btn-group">
+									<button onclick="window.location.href = '#'">Coming Soon</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="card project-card">
+							<div class="project-image">
+								<!--
+							<img class="minefield-img" src="resources/minefield-lightTheme.png" alt="" />
+							<img class="minefield-dark-img" src="resources/minefield-darkTheme.png" alt="" />
+							-->
+							</div>
+							<div class="project-content">
+								<h2>F1 Tracker</h2>
+								<p>See what's happening in the world of F1</p>
+							</div>
+							<div class="project-footer">
+								<p class="sports">Sports</p>
+								<div class="btn-group">
+									<button onclick="window.location.href = '#'">Coming Soon</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right-content">
+				<div class="webpage-theme">
+					<span class="theme-toggle" onclick="switchTheme()"><i class="fa-solid fa-sun fa-lg"></i></span>
+				</div>
+				<div class="languages">
+					<h1>Languages & Tools</h1>
+
+					<div class="languages-container">
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="html-logo"></div>
+								<h1>HTML</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="css-logo"></div>
+								<h1>CSS</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="javascript-logo"></div>
+								<h1>JavaScript</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="typescript-logo"></div>
+								<h1>TypeScript</h1>
+							</div>
+						</div>
+
+						<div class="language-block">
+							<div class="language-inner card">
+								<div class="github-logo"></div>
+								<h1>GitHub</h1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
